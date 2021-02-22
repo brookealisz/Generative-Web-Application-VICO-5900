@@ -1229,8 +1229,9 @@ global.TONE_SILENCE_VERSION_LOGGING = true;
    *@method getAudioContext
    *@return {Object}    AudioContext for this sketch
    *@example
+   *
+   * <div><code>
    */
-    <div><code>
      function draw() {
        background(255);
        textAlign(CENTER);
@@ -1249,9 +1250,9 @@ global.TONE_SILENCE_VERSION_LOGGING = true;
        var synth = new p5.MonoSynth();
        synth.play('A4', 0.5, 0, 0.2);
      }
-   
-    </div></code>
-   
+   /**
+   * </div></code>
+   */
 
   p5.prototype.getAudioContext = function () {
     return audiocontext;
@@ -1290,8 +1291,9 @@ global.TONE_SILENCE_VERSION_LOGGING = true;
    *  @method userStartAudio
    *  @for p5
    *  @example
+   *
+   *  <div><code>
    */
-     <div><code>
      function setup() {
        // mimics the autoplay policy
        getAudioContext().suspend();
@@ -1309,8 +1311,9 @@ global.TONE_SILENCE_VERSION_LOGGING = true;
      function mousePressed() {
        userStartAudio();
      }
-     </code></div>
-   
+   /**
+   *  </code></div>
+   */
 
 
   p5.prototype.userStartAudio = function (elements, callback) {
