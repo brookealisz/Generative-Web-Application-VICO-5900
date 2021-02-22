@@ -14,7 +14,7 @@ function setup() {
   g = random(255);
   b = random(255);
   
-  song = loadSound("music/musicbox.mp3", loaded);
+  song = loadSound("musicbox.mp3", loaded);
  
   
    gui = new Gui();
