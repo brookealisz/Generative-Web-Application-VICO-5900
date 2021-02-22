@@ -1224,11 +1224,12 @@ global.TONE_SILENCE_VERSION_LOGGING = true;
    *
    * <p>Some browsers require users to startAudioContext
    * with a user gesture, such as touchStarted in the example below.</p>
+   * 
+   *@for p5
+   *@method getAudioContext
+   *@return {Object}    AudioContext for this sketch
+   *@example
    */
-    @for p5
-    @method getAudioContext
-    @return {Object}    AudioContext for this sketch
-    @example
     <div><code>
      function draw() {
        background(255);
@@ -1278,17 +1279,18 @@ global.TONE_SILENCE_VERSION_LOGGING = true;
    *  example below. This method utilizes
    *  <a href="https://github.com/tambien/StartAudioContext">StartAudioContext
    *  </a>, a library by Yotam Mann (MIT Licence, 2016).</p>
+   *
+   *  @param  {Element|Array}   [element(s)] This argument can be an Element,
+   *                                Selector String, NodeList, p5.Element,
+   *                                jQuery Element, or an Array of any of those.
+   *  @param  {Function} [callback] Callback to invoke when the AudioContext
+   *                                has started
+   *  @return {Promise}            Returns a Promise that resolves when
+   *                                       the AudioContext state is 'running'
+   *  @method userStartAudio
+   *  @for p5
+   *  @example
    */
-     @param  {Element|Array}   [element(s)] This argument can be an Element,
-                                   Selector String, NodeList, p5.Element,
-                                   jQuery Element, or an Array of any of those.
-     @param  {Function} [callback] Callback to invoke when the AudioContext
-                                   has started
-     @return {Promise}            Returns a Promise that resolves when
-                                          the AudioContext state is 'running'
-     @method userStartAudio
-     @for p5
-     @example
      <div><code>
      function setup() {
        // mimics the autoplay policy
