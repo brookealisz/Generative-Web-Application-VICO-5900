@@ -1,0 +1,116 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+}
+
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.div-block {
+  width: 100vh;
+  height: 100vh;
+  overflow:scroll;
+  background-color: white;
+  opacity: 0.7;
+  
+}
+
+.grid {
+  height: auto;
+  margin-top: 35px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 17px;
+  
+  grid-column-gap: 0vw;
+  grid-row-gap: 0vh;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  font-family: American Typewriter, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-block {
+  font-style: normal;
+}
+
+.dg.main.taller-than-window .close-button {
+    border-top: 1px solid #ddd;
+}
+
+.dg.main .close-button {
+    background-color: #fff;
+}
+ 
+.dg.main .close-button:hover {
+    background-color: #ddd;
+}
+
+.dg {
+    color: #000000;
+    text-shadow: none !important;
+}
+
+.dg.main::-webkit-scrollbar {
+    background: #000000;
+}
+
+.dg.main::-webkit-scrollbar-thumb {
+    background: #000;
+}
+ 
+.dg li:not(.folder) {
+    background: #ffffff;
+    border-bottom: 1px solid #fff;
+}
+ 
+.dg li.save-row .button {
+    text-shadow: none !important;
+}
+
+.dg li.title {
+    background: #000000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;
+}
+
+.dg .cr.function:hover,.dg .cr.boolean:hover {
+    background: #fff;
+}
+ 
+.dg .c input[type=text] {
+    background: #ffff;
+}
+ 
+.dg .c input[type=text]:hover {
+    background: #eee;
+}
+ 
+.dg .c input[type=text]:focus {
+    background: #eee;
+    color: #555;
+}
+ 
+.dg .c .slider {
+    background: #ffff;
+}
+
+.dg .c .slider:hover {
+    background: #eee;
+}
