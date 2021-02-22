@@ -1211,7 +1211,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 global.TONE_SILENCE_VERSION_LOGGING = true;
 !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(35), __webpack_require__(12), __webpack_require__(0)], __WEBPACK_AMD_DEFINE_RESULT__ = (function (StartAudioContext, Context, Tone) {
-  var audiocontext = new window.AudioContext(); 
+  var audiocontext = new window.AudioContext();
+  audiocontext.resume();
 
   Tone.context.dispose();
   Tone.setContext(audiocontext);
